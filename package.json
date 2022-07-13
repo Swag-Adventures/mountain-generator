@@ -1,0 +1,35 @@
+{
+    "name": "mountain-generator",
+    "version": "1.0.1",
+    "description": "A package for generating svg mountains.",
+    "main": "lib/index.js",
+    "keywords": [
+        "svg",
+        "mountain",
+        "ui",
+        "generator",
+        "frontend"
+    ],
+    "scripts": {
+        "build": "npm run format && npm run lint && git remote add origin https://github.com/Swag-Adventures/mountain-generator.git && git branch -M main && git push -u origin main",
+        "dev": "nodemon src/app.ts",
+        "format": "prettier --write \"src/**/*.{ts,js}\"",
+        "lint": "prettier --check \"src/**/*.{ts,js}\""
+    },
+    "files": [
+        "lib/**/*"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Swag-Adventures/mountain-generator.git"
+    },
+    "author": "Swag Adventures",
+    "license": "MIT",
+    "devDependencies": {
+        "@types/node": "^18.0.3",
+        "nodemon": "^2.0.19",
+        "prettier": "^2.7.1",
+        "ts-node": "^10.8.2",
+        "typescript": "^4.7.4"
+    }
+}
