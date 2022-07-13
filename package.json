@@ -11,7 +11,7 @@
         "frontend"
     ],
     "scripts": {
-        "build": "npm run format && npm run lint && git remote add origin https://github.com/Swag-Adventures/mountain-generator.git && git branch -M main && git push -u origin main",
+        "build": "npm run format && npm run lint && tsc",
         "dev": "nodemon src/app.ts",
         "format": "prettier --write \"src/**/*.{ts,js}\"",
         "lint": "prettier --check \"src/**/*.{ts,js}\""
